@@ -96,11 +96,11 @@ if(select=='Heart Disease Prediction'):
     if st.button('Heart Disease Test Result'):
 
         y = [age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal]
-        y = [float(x) for x in user_input]
+        y = [float(x) for x in y]
 
-        heart_pred = heart_disease_model.predict([y])
+        heart_pred = heart_disease_mod.predict([y])
 
-        if heart_prediction[0] == 1:
+        if heart_pred[0] == 1:
             heart_diagnosis = 'The person is having heart disease'
         else:
             heart_diagnosis = 'The person does not have any heart disease'
@@ -170,11 +170,11 @@ if(select=='Parkinsons Prediction'):
         z = [fo, fhi, flo, Jitter_percent, Jitter_Abs,
                       RAP, PPQ, DDP,Shimmer, Shimmer_dB, APQ3, APQ5,
                       APQ, DDA, NHR, HNR, RPDE, DFA, spread1, spread2, D2, PPE]
-        z = [float(x) for x in user_input]
+        z = [float(x) for x in z]
 
-        parkinsons_prediction = parkinsons_model.predict([z])
+        parkinsons_pred = parkinsons_mod.predict([z])
 
-        if parkinsons_prediction[0] == 1:
+        if parkinsons_pred[0] == 1:
             parkinsons_diagnosis = "The person has Parkinson's disease"
         else:
             parkinsons_diagnosis = "The person does not have Parkinson's disease"
