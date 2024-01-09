@@ -8,6 +8,8 @@ heart_disease_mod=pickle.load(open('saved_models/heart_disease_model.sav','rb'))
 
 parkinsons_mod=pickle.load(open('saved_models/parkinsons_model.sav','rb'))
 
+st.set_page_config(page_title="Multiple Disease Prediction System")
+
 
 with st.sidebar:
     select=option_menu("Multiple Disease Prediction System",
