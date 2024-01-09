@@ -2,11 +2,11 @@ import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-diabetes_mod=pickle.load(open('C:/Users/coolr/Desktop/Diseases Prediction System/saved_models/diabetes_model.sav','rb'))
+diabetes_mod=pickle.load(open('saved_models/diabetes_model.sav','rb'))
 
-heart_disease_mod=pickle.load(open('C:/Users/coolr/Desktop/Diseases Prediction System/saved_models/heart_disease_model.sav','rb'))
+heart_disease_mod=pickle.load(open('saved_models/heart_disease_model.sav','rb'))
 
-parkinsons_mod=pickle.load(open('C:/Users/coolr/Desktop/Diseases Prediction System/saved_models/parkinsons_model.sav','rb'))
+parkinsons_mod=pickle.load(open('saved_models/parkinsons_model.sav','rb'))
 
 
 with st.sidebar:
